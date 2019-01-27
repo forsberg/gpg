@@ -19,6 +19,12 @@ TODO
 ----
 * There are possibly some unnecessary type conversions happening because `bufio.ReadString()` is used as opposed to `bufio.ReadBytes()`.
 
+Running Tests
+-------------
+
+The tests need a running gpg-agent with the GNUPGHOME environment variable set to the testdata/gnupg directory. To simplify running tests,
+use the `runtests.sh` wrapper script which will set GNUPGHOME, start gpg-agent then run `go test` for you.
+
 License
 -------
 This software is distributed under the BSD-style license found in the LICENSE file.

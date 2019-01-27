@@ -1,3 +1,4 @@
+go_import_path: github.com/prep/gpg
 dist: xenial
 
 language: go
@@ -16,11 +17,7 @@ before_install:
   - sudo apt-get update
   - sudo apt-get install -y gpgv2
 
-# Start the gpg-agent in the background before running the test suite.
-before_script:
-  - gpg-agent --homedir testdata/gnupg --daemon
-
 script:
   - GO_FILES=$(find . -iname '*.go' -type f | grep -v /vendor/)
   - test -z $(gofmt -s -l $GO_FILES)
-  - go test -v -race ./...
+  - ./runtests.sh -v -race ./...
