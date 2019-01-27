@@ -1,5 +1,5 @@
 gpg-agent
-[![TravisCI](https://travis-ci.org/prep/gpg.svg?branch=master)](https://travis-ci.org/prep/gpg.svg?branch=master)
+[![TravisCI](https://travis-ci.org/prep/gpg.svg?branch=master)](https://travis-ci.org/prep/gpg?branch=master)
 [![Go Report Card](https://goreportcard.com/badge/github.com/prep/gpg)](https://goreportcard.com/report/github.com/prep/gpg)
 [![GoDoc](https://godoc.org/github.com/prep/gpg/agent?status.svg)](https://godoc.org/github.com/prep/gpg/agent)
 =========
